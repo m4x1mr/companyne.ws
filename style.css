@@ -274,6 +274,13 @@ li:active, .chip:active, #myBtn:active, .button:active {
         width: 100%;
         margin-bottom: 1.5em;
     }
+    h3{
+        padding-top: 0;
+        margin-top: 3em;
+    }
+    .chips{
+        margin-bottom: 0;
+    }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
