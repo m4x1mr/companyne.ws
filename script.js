@@ -154,8 +154,10 @@ function getNews(topic) {
                 link.setAttribute('target', '_blank');
                 img.setAttribute('src', element.image)
 
+                let fixDateForAllBrowsers = element.publishedAt.replace(/-/g, '/');
+
                 //sets p's content to name of source
-                caption.textContent = element.source.name + ' ― ' + moment(element.publishedAt).fromNow();
+                caption.textContent = element.source.name + ' ― ' + moment(fixDateForAllBrowsers).fromNow();
                 //the content in h1 style is the title
                 title.textContent = element.title;
                 desc.textContent = element.description;
