@@ -124,7 +124,7 @@ function getNews(topic) {
     div.appendChild(h3);
     //c3add341256eba19d065d37cf36b8cd6
     //fb7a02aa4ae9237a19c62f1378f9ad6f
-    let url = `https://gnews.io/api/v3/search?q=${topic}&token=fb7a02aa4ae9237a19c62f1378f9ad6f`;
+    let url = `https://gnews.io/api/v3/search?q=${topic}&token=c3add341256eba19d065d37cf36b8cd6`;
 
     fetch(url).then(response => {
         return response.json();
