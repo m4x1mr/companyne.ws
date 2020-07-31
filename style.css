@@ -258,7 +258,7 @@ li:active, .chip:active, #myBtn:active, .button:active {
         margin-top: 1.5em;
     }
     .input-container .input{
-        width: 90%;
+        width: 70%;
     }
     .search .button {
         width: 100%;
