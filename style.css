@@ -151,27 +151,27 @@ a:hover h1 {
     background-color: rgb(243, 243, 243);
     border-radius: 4px;
     padding: 0.5em;
-    display: inline-block;
+    display: inline-flex;
 }
 
-a .fa{
+a .fa {
     color: black;
-
 }
 
-.input-container .fa{
+.input-container .fa {
     color: rgb(173, 173, 173);
 }
 
-.input {
+.input-container .input {
     background-color: transparent;
     border: none;
     font-size: 1em;
     padding-left: 1em;
     margin: auto;
+    width: 100%;
 }
 
-.input:focus{
+.input:focus {
     outline: none;
     box-shadow: none;
 }
@@ -201,24 +201,22 @@ a .fa{
     bottom: 30px;
     right: 40px;
     z-index: 99;
-    background-color: #ffffff;
-    color: rgb(0, 0, 0);
+    background-color: transparent;
+    color: rgb(150, 150, 150);
     cursor: pointer;
     padding: 0.6em;
-    border: 0.2px solid rgb(228, 228, 228);
+    border: none;
     border-radius: 5em;
-    font-size: 1em;
-    font-weight: 600;
-    transition: 0.05s ease-in-out;
+    font-size: 2em;
+    transition: 0.1s ease-in-out;
     outline: none;
     /*box-shadow: 3px 3px 0px rgb(201, 201, 201);*/
 }
 
-#myBtn:hover {
-    /*
-    background-color: rgb(218, 218, 218);
-    color: rgb(71, 71, 237);*/
+#myBtn:hover{
+    transform: translateY(-5px);
 }
+
 
 li {
     overflow: hidden;
@@ -257,9 +255,7 @@ li:active, .chip:active, #myBtn:active, .button:active {
     }
     .input-container {
         margin-top: 1.5em;
-    }
-    .input-container .input{
-        width: 70%;
+        width: 100%;
     }
     .search .button {
         width: 100%;
@@ -293,11 +289,8 @@ li:active, .chip:active, #myBtn:active, .button:active {
     .news-list {
         width: 80%;
     }
-    .input-container{
-        width: 50%;
-    }
-    .input-container .input{
-        width: 80%;
+    .input-container .input {
+        padding-right: 2em;
     }
     li {
         flex-direction: column-reverse;
@@ -323,11 +316,8 @@ li:active, .chip:active, #myBtn:active, .button:active {
     .news-list {
         width: 70%;
     }
-    .input-container{
-        width: 40%;
-    }
-    .input-container .input{
-        width: 90%;
+    .input-container .input {
+        padding-right: 2em;
     }
     li {
         flex-direction: row;
@@ -356,11 +346,8 @@ li:active, .chip:active, #myBtn:active, .button:active {
     .news-list {
         width: 60%;
     }
-    .input-container{
-        width: 33%;
-    }
-    .input-container .input{
-        width: 90%;
+    .input-container .input {
+        padding-right: 2em;
     }
     li {
         flex-direction: row;
