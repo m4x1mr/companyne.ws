@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>News</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment.min.js"></script>    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
@@ -16,13 +16,20 @@
     <div class="header">
         <div class="container">
             <a href="javascript:;" onclick="getAllNews();">
-                <!--<span class="logo">News</span>-->
-                <img src="img/logo.svg" style="width: 4em;">
+                <i class="fa fa-newspaper-o" aria-hidden="true"></i>
+                <span class="logo">                
+                    companyne.ws</span>
+                <!--<img src="img/logo.svg" style="width: 4em;">-->
             </a>
-            <form class="search" action="">
-                <input class="input" type="text" placeholder="Enter company name...">
-                <button class="button" type="submit" onclick="">Search</button>
-            </form>
+
+            <div class="input-container">
+                <form class="search" action="">
+                    <i class="fa fa-search" aria-hidden="true"></i><input class="input" type="text"
+                        placeholder="Enter company name...">
+                </form>
+            </div>
+            <!--<button class="button" type="submit">Search</button>-->
+
         </div>
     </div>
 

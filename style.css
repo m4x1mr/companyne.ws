@@ -5,7 +5,7 @@
 }
 
 body {
-    background-color: rgb(245, 245, 245);
+    background-color: rgb(250, 250, 250);
     font-size: 18px;
     margin: 0;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -15,7 +15,7 @@ body {
     background-color: white;
     height: auto;
     padding-bottom: 1em;
-    border-bottom: 5px solid rgb(0, 0, 0);
+    border-bottom: 0.2px solid rgb(228, 228, 228);
 }
 
 .container {
@@ -96,20 +96,17 @@ h4 {
 }
 
 .chip {
-    /*border: 0.5px solid #ddd;*/
-    border: 5px solid #000;
+    border: 0.2px solid rgb(228, 228, 228);
     border-radius: 5px;
     background-color: #fff;
     padding: 0.5em;
     margin: 0.25em;
-    transition: 0.05s ease-in-out;
-    box-shadow: 3px 3px 0px rgb(201, 201, 201);
+    transition: 0.1s ease-in-out;
 }
 
 .chip:hover {
-    /*background-color: rgb(0, 111, 255, 21%);
-    border: 0.5px solid rgb(0, 111, 255);*/
-    background-color: rgb(218, 218, 218);
+    background-color: rgb(227, 234, 251);
+    border: 0.2px solid rgb(0, 111, 255);
 }
 
 .chip:hover h4 {
@@ -137,54 +134,56 @@ a:hover h1 {
     display: inline-block;
     color: rgb(0, 0, 0);
     font-weight: 700;
-    font-size: 2em;
-    transition: 0.1s ease-in-out;
+    font-size: 1.2em;
     margin: 0.25em 0;
-}
-
-.logo:hover {
-    text-decoration: underline;
 }
 
 .search {
     display: block;
-    margin: 0.5em;
 }
 
 .search ::placeholder {
     color: rgb(173, 173, 173);
 }
 
-.input {
-    width: 300px;
-    height: 1.7em;
-    /*border: 0.5px solid #ddd;*/
-    border: 5px solid #000;
+.input-container {
+    border: 0.2px solid #f0f0f0;
+    background-color: rgb(243, 243, 243);
     border-radius: 4px;
-    font-size: 1.2em;
-    padding: 0.2em;
+    padding: 0.5em;
+    display: inline-block;
+}
+
+a .fa{
+    color: black;
+
+}
+
+.input-container .fa{
+    color: rgb(173, 173, 173);
+}
+
+.input {
+    background-color: transparent;
+    border: none;
+    font-size: 1em;
+    padding-left: 1em;
     margin: auto;
 }
 
-.input:focus {
+.input:focus{
     outline: none;
-    /*border: 0.5px solid rgb(0, 111, 255);*/
     box-shadow: none;
 }
 
 .button {
-    margin: auto;
-    width: 140px;
-    height: 2.5em;
-    font-size: 1.2em;
-    padding: 0.15em;
+    display: inline-block;
+    font-size: 1em;
+    padding: 0.5em 1em;
     background-color: rgb(255, 255, 255);
     color: rgb(0, 0, 0);
-    /*border: 0.5px solid #ddd;*/
-    border: 5px solid #000;
+    border: 0.2px solid rgb(228, 228, 228);
     border-radius: 5px;
-    line-height: 0;
-    box-shadow: 3px 3px 0px rgb(201, 201, 201);
     cursor: pointer;
     transition: 0.1s ease-in-out;
 }
@@ -202,24 +201,22 @@ a:hover h1 {
     bottom: 30px;
     right: 40px;
     z-index: 99;
-    /*border: 0.5px solid #ddd;*/
-    border: 5px solid #000;
-    background-color: #ffffff;
-    color: rgb(0, 0, 0);
+    background-color: #000000;
+    color: rgb(255, 255, 255);
     cursor: pointer;
     padding: 0.6em;
-    border-radius: 0.2em;
-    font-size: 1.2em;
+    border-radius: 5em;
+    font-size: 1em;
+    font-weight: 600;
     transition: 0.05s ease-in-out;
-    box-shadow: 3px 3px 0px rgb(201, 201, 201);
+    outline: none;
+    /*box-shadow: 3px 3px 0px rgb(201, 201, 201);*/
 }
 
 #myBtn:hover {
     /*
-    background-color: rgb(0, 111, 255, 21%);
-    border: 0.5px solid rgb(0, 111, 255);*/
     background-color: rgb(218, 218, 218);
-    color: rgb(71, 71, 237);
+    color: rgb(71, 71, 237);*/
 }
 
 li {
@@ -227,12 +224,10 @@ li {
     display: flex;
     justify-content: space-between;
     padding: 1.5em;
-    /*border: 0.2px solid #ddd;*/
-    border: 5px solid #000;
+    border: 0.2px solid rgb(228, 228, 228);
     border-radius: 0.1em;
     background-color: white;
-    /*box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.01);*/
-    box-shadow: 6px 7px 0px rgb(201, 201, 201);
+    /*box-shadow: 3px 3px 0px rgb(201, 201, 201);*/
     list-style: none;
     text-align: left;
     /*margin-bottom: 0.5em;*/
@@ -258,10 +253,12 @@ li:active, .chip:active, #myBtn:active, .button:active {
     .search {
         max-width: 100%;
         overflow: hidden;
-        margin: 2em 0 0 0;
     }
-    .search .input {
-        width: calc(100% - 19px);
+    .input-container {
+        margin-top: 1.5em;
+    }
+    .input-container .input{
+        width: 90%;
     }
     .search .button {
         width: 100%;
@@ -274,11 +271,11 @@ li:active, .chip:active, #myBtn:active, .button:active {
         width: 100%;
         margin-bottom: 1.5em;
     }
-    h3{
+    h3 {
         padding-top: 0;
         margin-top: 3em;
     }
-    .chips{
+    .chips {
         margin-bottom: 0;
     }
 }
@@ -290,8 +287,15 @@ li:active, .chip:active, #myBtn:active, .button:active {
         width: 80%;
         flex-direction: row;
         justify-content: space-between;
+        align-items: center;
     }
     .news-list {
+        width: 80%;
+    }
+    .input-container{
+        width: 50%;
+    }
+    .input-container .input{
         width: 80%;
     }
     li {
@@ -313,9 +317,16 @@ li:active, .chip:active, #myBtn:active, .button:active {
         width: 90%;
         flex-direction: row;
         justify-content: space-between;
+        align-items: center;
     }
     .news-list {
         width: 70%;
+    }
+    .input-container{
+        width: 40%;
+    }
+    .input-container .input{
+        width: 90%;
     }
     li {
         flex-direction: row;
@@ -339,9 +350,16 @@ li:active, .chip:active, #myBtn:active, .button:active {
         width: 90%;
         flex-direction: row;
         justify-content: space-between;
+        align-items: center;
     }
     .news-list {
         width: 60%;
+    }
+    .input-container{
+        width: 33%;
+    }
+    .input-container .input{
+        width: 90%;
     }
     li {
         flex-direction: row;
