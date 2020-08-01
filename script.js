@@ -95,11 +95,13 @@ async function getChips(value) {
     if (value) {
         chipLink.setAttribute('href', '#' + value); //set the anchor
         chipText.textContent = value; //sets the subheading text to the companies' names  
+        chip.classList.remove('back');
     } else {
         chipLink.setAttribute('href', 'javascript:;');
         chipLink.setAttribute('onClick', 'getAllNews();');
         chipLink.setAttribute('id', 'gohome');
         chipText.textContent = '← Return Home';
+        chip.classList.add('back');
     }
 
     //build the chip
